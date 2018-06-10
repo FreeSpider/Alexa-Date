@@ -8,7 +8,7 @@ class ferreDate
      * 某月有多少天
      * @param NumberFormatter $year
      * @param NumberFormatter $month
-     * @return boolean|number
+     * @return int|number
      */
     public function dayNum($year, $month)
     {
