@@ -87,4 +87,15 @@ class ferreDate
         }
     }
     
+    /**
+     * @return array
+     * By Ferre
+     * 本月时间戳范围
+     */
+    public function monthTimeRange()
+    {
+        $month_start = strtotime(date("Y-m-01"));
+        return ['start' => $month_start, 'end' => strtotime("+1 month -1 seconds", $month_start)];
+    }
+    
 }
